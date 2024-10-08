@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Details</title>
+    <link rel="stylesheet" href="train.css">
+</head>
+<body>
+    <center>
+    <div id="container">
+        <h1>Train Details</h1>
+        <table>
+            
+            <tr>
+                <td>Train Name</td> <td> <input type="text" id="name" placeholder="Enter Train Name" required> </td>
+            </tr>
+            
+            
+            <tr>
+                <td>Arrival Time</td> <td> <input type="time" id="arrival" placeholder="Arrival Time" required> </td>
+            </tr>
+            
+            
+            <tr>
+                <td>Departure Time</td> <td> <input type="time" id="departure" placeholder="Departure Time" required> </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                <button id="add" onclick="addTrain()">Add</button>
+                <button id="delete" onclick="deleteTrain()">Delete</button>
+                </td>
+            </tr>
+            
+        
+        </table>
+        
+        <div id="result"></div>
+    </div>
+    
+
+    
+    </center>
+    <script src="train.js"></script>
+
+</body>
+</html>
